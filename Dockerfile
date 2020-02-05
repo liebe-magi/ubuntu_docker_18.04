@@ -5,7 +5,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update
 RUN apt upgrade -y
-RUN apt install -y build-essential language-pack-ja curl software-properties-common
+RUN apt install -y sudo zsh build-essential language-pack-ja curl software-properties-common \
+                silversearcher-ag 
 
 RUN add-apt-repository ppa:git-core/ppa
 RUN apt update
